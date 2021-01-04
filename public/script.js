@@ -25,10 +25,10 @@ const appendElement = (message, position, nm) => {
     }
 }
 
-// let naam = prompt('Enter Your Username: ');
-// while (!naam) {
-//     naam = prompt('Username is required!: ');
-// }
+let naam = prompt('Enter Your Username: ');
+while (!naam) {
+    naam = prompt('Username is required!: ');
+}
 
 socket.emit('new-user-joined', naam);
 
