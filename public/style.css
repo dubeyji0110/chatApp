@@ -6,7 +6,6 @@
     box-sizing: border-box;
     outline: none;
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
 }
 
 nav{
@@ -23,10 +22,6 @@ nav{
     align-items: center;
     height: 100%;
     margin: auto;
-}
-
-.container{    
-    margin-top: 1rem;
 }
 
 .max-width h1{
@@ -53,9 +48,15 @@ nav{
     border: 2px solid #000;
     flex-direction: column;
     padding: 5px;
-    min-height: 70vh;
-    overflow-y: auto;
-    justify-content: start;
+    height: 70vh;
+    overflow-y: scroll;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar{
+    display: none;
 }
 
 .name{
@@ -141,4 +142,15 @@ nav{
     #sendContainer input, #sendContainer button{
         font-size: 16px;
     }
+}
+
+footer{
+    background: #000;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
 }

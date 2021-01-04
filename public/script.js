@@ -25,7 +25,11 @@ const appendElement = (message, position, nm) => {
     }
 }
 
-const naam = prompt('Enter Your Username: ');
+// let naam = prompt('Enter Your Username: ');
+// while (!naam) {
+//     naam = prompt('Username is required!: ');
+// }
+
 socket.emit('new-user-joined', naam);
 
 socket.on('user-joined', naam => {
@@ -43,7 +47,7 @@ socket.on('left', naam => {
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     const message = messageInput.value;
-    appendElement(`${message}`, 'right', ` `);
+    appendElement(`${message}`, 'right', `You`);
     socket.emit('send', message);
     messageInput.value = '';
 });
