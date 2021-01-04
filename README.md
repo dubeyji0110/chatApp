@@ -2,7 +2,7 @@
 
 # YelpCamp
 
-> Its a simple chat application made using `socket.io` npm package
+> Its a simple real time global chat application made using `socket.io` npm package. 
 
 ## Prerequisites
 
