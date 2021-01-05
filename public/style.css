@@ -99,9 +99,9 @@ nav{
 }
 
 #sendContainer input{
-    width: 82%;
+    width: 80%;
     font-size: 18px;
-    padding: 1px 5px;
+    padding: 0.5px 2px;
 }
 
 #sendContainer button{
@@ -146,11 +146,11 @@ nav{
 
 footer{
     background: #000;
-    height: 50px;
-    position: fixed;
+    height: 30px;
+    position: absolute;
     bottom: 0;
     width: 100%;
     color: white;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 4px;
 }
