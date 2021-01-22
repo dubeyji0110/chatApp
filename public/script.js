@@ -6,20 +6,20 @@ const messageContainer = document.querySelector('.container');
 
 const appendElement = (message, position, nm) => {
     if (position === 'left') {
-        const messageElement = document.createElement('div');
-        messageElement.innerHTML = `<div class="naam">${nm}</div><p>${message}</p></div>`;
+        const messageElement = document.createElement('p');
+        messageElement.innerHTML = `<span class="name">${nm}</span>${message}</div>`;
         messageElement.classList.add('message');
         messageElement.classList.add(position);
         messageContainer.append(messageElement);
     } else if (position === 'right') {
-        const messageElement = document.createElement('div');
-        messageElement.innerHTML = `<p>${message}</p>`;
+        const messageElement = document.createElement('p');
+        messageElement.innerHTML = `${message}`;
         messageElement.classList.add('message');
         messageElement.classList.add(position);
         messageContainer.append(messageElement);
     } else if (position === 'center') {
         const messageElement = document.createElement('p');
-        messageElement.innerHTML = `<p>${message}</p>`;
+        messageElement.innerHTML = `${message}`;
         messageElement.classList.add(position);
         messageContainer.append(messageElement);
     }

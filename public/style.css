@@ -1,157 +1,167 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    font-family: 'Poppins', sans-serif;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	font-family: "Poppins", sans-serif;
 }
 
-nav{
-    background: #457b9d; 
-    width: 100vw;
-    height: 10vh;
+nav {
+	background: #457b9d;
+	width: 100vw;
+	height: 10vh;
 }
 
-.max-width, .container{
-    width: 100%;
-    max-width: 1000px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    margin: auto;
+.max-width,
+.container {
+	width: 100%;
+	max-width: 1000px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	margin: auto;
 }
 
-.max-width h1{
-    font-weight: 600;
-    font-size: 32px;
-    color: #fff;
+.max-width h1 {
+	font-weight: 600;
+	font-size: 32px;
+	color: #fff;
 }
 
-.logo{
-    width: 50px;
-    animation: anim 5s infinite linear;
+.logo {
+	width: 50px;
+	animation: anim 5s infinite linear;
 }
 
 @keyframes anim {
-    from{
-        filter: hue-rotate(0deg);
-    }
-    to{
-        filter: hue-rotate(360deg);
-    }
+	from {
+		filter: hue-rotate(0deg);
+	}
+	to {
+		filter: hue-rotate(360deg);
+	}
 }
 
-.container{
+.container {
     border: 2px solid #000;
-    flex-direction: column;
-    padding: 5px;
-    height: 70vh;
-    overflow-y: scroll;
-    justify-content: flex-end;
-    margin-top: 1rem;
-    scrollbar-width: none;
+    display: block;
+	padding: 5px;
+	height: 70vh;
+	overflow-y: scroll;
+	margin-top: 1rem;
+	scrollbar-width: none;
 }
 
-::-webkit-scrollbar{
-    display: none;
+::-webkit-scrollbar {
+	display: none;
 }
 
-.name{
-    font-size: 14px;
-    font-weight: 600;
-    padding-left: 10px;
-    font-family: 'Open Sans', sans-serif;
+.name {
+	font-size: 14px;
+	font-weight: 600;
+	font-family: "Open Sans", sans-serif;
+	position: absolute;
+	top: -20px;
 }
 
-.message p{
-    background: #f8edeb;
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-family: 'Open Sans', sans-serif;
-    margin-bottom: 5px;
-    font-size: 20px;
+.message {
+	background: #f8edeb;
+	padding: 5px 10px;
+	border-radius: 10px;
+	font-family: "Open Sans", sans-serif;
+	margin-bottom: 25px;
+	font-size: 20px;
+    width: fit-content;
+    width: -moz-fit-content;
+	max-width: 90%;
+	overflow-wrap: break-word;
 }
 
-.center{
-    margin-bottom: 5px;
-    background: #e63946;
-    padding: 2px 8px;
-    color: #fff;
-    font-size: 12px;
-    text-align: center;
-    border-radius: 20px;
+.center {
+    margin: auto;
+	margin-bottom: 25px;
+	background: #e63946;
+	padding: 2px 8px;
+	color: #fff;
+    width: fit-content;
+    width: -moz-fit-content;
+	font-size: 12px;
+	text-align: center;
+	border-radius: 20px;
 }
 
-.left{
-    margin-right: auto;
+.left {
+	margin-right: auto;
+	position: relative;
 }
 
-.right{
-    margin-left: auto;
+.right {
+	margin-left: auto;
 }
 
-#sendContainer{
-    width: 100%;
-    text-align: center;
-    padding-top: 10px;
+#sendContainer {
+	width: 100%;
+	text-align: center;
+	padding-top: 10px;
 }
 
-#sendContainer input{
-    width: 80%;
-    font-size: 18px;
-    padding: 0.5px 2px;
+#sendContainer input {
+	width: 80%;
+	font-size: 18px;
+	padding: 0.5px 2px;
 }
 
-#sendContainer button{
-    width: 17%;
-    font-size: 18px;
-    font-weight: 600;
-    background: #457b9d;
-    border: none;
-    padding: 2.5px 0;
-    border-radius: 2px;
-    cursor: pointer;
+#sendContainer button {
+	width: 17%;
+	font-size: 18px;
+	font-weight: 600;
+	background: #457b9d;
+	border: none;
+	padding: 2.5px 0;
+	border-radius: 2px;
+	cursor: pointer;
 }
 
-@media only screen and (max-width: 540px){
-    .container{
-        padding: 5px 10px;
-    }
+@media only screen and (max-width: 540px) {
+	.container {
+		padding: 5px 10px;
+	}
 
-    .max-width h1{
-        font-size: 25px;
-        margin-left: 5px;
-    }
+	.max-width h1 {
+		font-size: 25px;
+		margin-left: 5px;
+	}
 
-    .logo{
-        width: 40px;
-        height: 40px;
-        margin-right: 5px;
-    }
+	.logo {
+		width: 40px;
+		height: 40px;
+		margin-right: 5px;
+	}
 
-    .message p{
-        font-size: 16px;
-    }
+	.message p {
+		font-size: 16px;
+	}
 
-    .name{
-        font-size: 11px;
-    }
+	.name {
+		font-size: 11px;
+	}
 
-    #sendContainer input, #sendContainer button{
-        font-size: 16px;
-    }
+	#sendContainer input,
+	#sendContainer button {
+		font-size: 16px;
+	}
 }
 
-footer{
-    background: #000;
-    height: 30px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    text-align: center;
-    padding-top: 4px;
+footer {
+	background: #000;
+	height: 30px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	color: white;
+	text-align: center;
+	padding-top: 4px;
 }
